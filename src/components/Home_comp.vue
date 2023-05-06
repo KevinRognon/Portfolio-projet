@@ -54,7 +54,7 @@ section{
     height: 100%;
     width: 100%;
 
-    background-color: #EDA951;
+    background-color: #5C3D3B;
 
     article{
         display: flex;
