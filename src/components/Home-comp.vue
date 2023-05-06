@@ -1,6 +1,6 @@
 <template>
     <section>
-        <article class="flex">
+        <article class="flex_home">
             <img src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
             <div id="div_p">
                 <p  class="article_p">
