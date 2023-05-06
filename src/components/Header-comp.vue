@@ -16,7 +16,7 @@
 <style lang="scss" scoped>
 header {
     background-color: #36494E;
-    height: 40px;
+    height: 60px;
 
     display: flex;
     justify-content: center;
