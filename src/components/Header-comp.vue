@@ -2,9 +2,9 @@
     <header>
         <nav>
             <ul>
-                <li>Home</li>
+                <router-link to="/">Home</router-link>
                 <h1>K.ROGNON</h1>
-                <li>Projects</li>
+                <router-link to="/projects">Projects</router-link>
             </ul>
         </nav>
     </header>
@@ -33,8 +33,8 @@ header {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            li{
-                list-style: none;
+            a{
+                text-decoration: none;
             }
         }
     }
