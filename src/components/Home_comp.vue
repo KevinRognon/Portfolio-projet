@@ -4,7 +4,7 @@
             <img src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
             <div id="div_p">
                 <p  class="article_p">
-                    Bonjour et bienvenue sur mon portfolio ! Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur web junior au Centre Européen de Formation. 
+                    Bonjour et bienvenue sur mon portfolio ! Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur Web & Web Mobile au Centre Européen de Formation. 
                 </p>
                     
                 <p  class="article_p">
@@ -26,21 +26,23 @@ onMounted(() => {
     let article_img = document.querySelector('img');
     // let article_p = document.querySelector('.article_p');
 
-    gsap.to(article_img, {
+    gsap.fromTo(article_img, {
+        opacity: 0,
+        x: '-100%',
+    }, {
         opacity: 1,
         x: 0,
-        duration: 3,
+        duration: 1,
         delay: 1
     });
     gsap.fromTo('.article_p', {
         opacity: 0,
         x: '100%',
-        duration: 2,
         delay: 2
     }, {
         opacity: 1,
         x: 0,
-        duration: 2,
+        duration: 1,
         delay: 2,
         stagger: .5
     })
