@@ -21,7 +21,7 @@
             </div>
         </article>
         <article>
-            
+
         </article>
     </section>
 </template>

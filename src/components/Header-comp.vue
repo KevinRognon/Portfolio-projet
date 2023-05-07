@@ -2,9 +2,8 @@
     <header>
         <nav>
             <ul>
-                <router-link to="/">Home</router-link>
                 <h1>K.ROGNON</h1>
-                <router-link to="/projects">Projects</router-link>
+                <router-link to="/">Home</router-link>
             </ul>
         </nav>
     </header>
