@@ -3,7 +3,7 @@
         <article class="flex article-color-second">
             <div id="project">
                 <img class="img_para" src="../assets/images/Image_CV.png" alt="Image projet de CV en HTML & CSS">
-                <hr>
+                <hr class="hr_cv">
                 <div id="para">
                     <h3 class="para_child">Projet: Curriculum Vitae</h3>
                     <p class="para_child">
@@ -27,7 +27,7 @@
 </template>
 <script setup>
 import { onMounted } from 'vue';
-import Bouton_Global from './Bouton_Global.vue'
+import Bouton_Global from './Bouton_Global.vue';
 import gsap from 'gsap';
 
 onMounted(() => {
@@ -37,7 +37,7 @@ onMounted(() => {
                 x: 0
             });
     let hr = gsap.to(
-        'hr', {
+        '.hr_cv', {
                 opacity: 0.4,
                 y: 0
             });
@@ -55,9 +55,9 @@ onMounted(() => {
                 para.reverse().duration(1);
             }
             else {
-                img.restart().delay(2).duration(2);
-                hr.restart().duration(1).delay(3);
-                para.restart().duration(2).delay(1);
+                img.restart().duration(2);
+                hr.restart().duration(1);
+                para.restart().duration(2);
         }
     })
     intersect.observe(section);
@@ -84,7 +84,7 @@ article{
         box-shadow: 0 0 10px 1px white;
         border-radius: 20px;
     }
-    hr{
+    .hr_cv{
         height: 200px;
         width: 1px;
         opacity: 0;
