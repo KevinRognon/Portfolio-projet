@@ -1,21 +1,21 @@
 <template>
     <section class="section_projets">
-        <article class="flex article-color-second">
-            <div id="project_com">
-                <img class="img_para_com" src="../assets/images/image_espace_commentaire.png" alt="Image du projet d'espace commentaire dynamique">
-                <hr class="hr_com">
-                <div id="para_com">
-                    <h3 class="para_com_child">Projet: Espace commentaire dynamique</h3>
-                    <p class="para_com_child">
-                        Ce projet a pour but de créer espace commentaire dynamique.
+        <article class="flex article-color-main">
+            <div id="project_cdc">
+                <img class="img_para_cdc" src="../assets/images/Image_cahier_des_charges.jpg" alt="Image du projet de cahier des charges">
+                <hr class="hr_cdc">
+                <div id="para_cdc">
+                    <h3 class="para_cdc_child">Projet: Cahier des charges</h3>
+                    <p class="para_cdc_child">
+                        Ce projet a pour but de créer un cahier des charges.
                     </p>
-                    <p class="para_com_child">
-                        Langage utilisé: HTML5, CSS3, Javascript + Vue.Js
+                    <p class="para_cdc_child">
+                        Langage utilisé: Aucun. Simple traitement de texte
                     </p>
-                    <p class="para_com_child">
-                        Logiciel utilisé: Visual studio code
+                    <p class="para_cdc_child">
+                        Logiciel utilisé: WordPad
                     </p>
-                    <Bouton_Global class="para_com_child para_com_button" />
+                    <Bouton_Global class="para_cdc_child para_cdc_button" />
                 </div>
             </div>
         </article>
@@ -24,26 +24,25 @@
 <script setup>
 import Bouton_Global from './Bouton_Global.vue';
 import { onMounted } from 'vue';
-import gsap from 'gsap'
-
+import gsap from 'gsap';
 onMounted(() => {
     let img = gsap.to(
-        '.img_para_com', {
+        '.img_para_cdc', {
                 opacity: 1,
                 x: 0
             });
     let hr = gsap.to(
-        '.hr_com', {
+        '.hr_cdc', {
                 opacity: 0.4,
                 y: 0
             });
     let para = gsap.to(
-        '.para_com_child', {
+        '.para_cdc_child', {
                 opacity: 1,
                 x: 0,
                 stagger: 0.2
             });
-    let section = document.querySelector('.para_com_button');
+    let section = document.querySelector('.para_cdc_button');
     const intersect = new IntersectionObserver((entries) => {
             if (entries[0].intersectionRatio <= 0) {
                 img.reverse().duration(1);
@@ -59,12 +58,12 @@ onMounted(() => {
     intersect.observe(section);
 });
 
-
 </script>
 <style lang="scss" scoped>
 section{
+    background-color: #5C3D3B;
     article{
-        #project_com{
+        #project_cdc{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -87,14 +86,14 @@ section{
             transform: translateY(-100%);
         }
 
-        #para_com{
+        #para_cdc{
             display: flex;
             flex-direction: column;
 
             gap: 10px;
         }
 
-        .para_com_child {
+        .para_cdc_child{
             opacity: 0;
             transform: translateX(200px);
         }
