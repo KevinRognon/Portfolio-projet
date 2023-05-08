@@ -1,15 +1,21 @@
 <template>
-    <button>Découvrir</button>
+    <button>{{ text }}</button>
 </template>
-<script setup>
 
+
+<script setup>
+    defineProps({
+        text: String
+    })
 </script>
+
+
 <style lang="scss" scoped>
 
 button{
     width: 100px;
     padding: 5px;
-    background-color: #5C3D3B;
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
     border-radius: 20px;
     transition: background-color 0.4s, color 0.4s;

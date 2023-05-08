@@ -1,5 +1,5 @@
 <template>
-    <section class="section_projets">
+    <section id="ec" class="section_projets">
         <article class="flex article-color-second">
             <div id="project_com">
                 <img class="img_para_com" src="../assets/images/image_espace_commentaire.png" alt="Image du projet d'espace commentaire dynamique">
@@ -15,7 +15,7 @@
                     <p class="para_com_child">
                         Logiciel utilisé: Visual studio code
                     </p>
-                    <Bouton_Global class="para_com_child para_com_button" />
+                    <Bouton_Global text="Découvrir" class="para_com_child para_com_button" />
                 </div>
             </div>
         </article>

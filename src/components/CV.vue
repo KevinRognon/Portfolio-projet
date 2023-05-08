@@ -1,5 +1,5 @@
 <template>
-    <section class="section-projets">
+    <section id="curriculum" class="section-projets">
         <article class="flex article-color-second">
             <div id="project">
                 <img class="img_para" src="../assets/images/Image_CV.png" alt="Image projet de CV en HTML & CSS">
@@ -16,7 +16,7 @@
                         Logiciel utilisé: Visual Studio Code
                     </p>
                     <!-- Inclure un router link sur ce bouton! -->
-                    <Bouton_Global class="para_child para_button" />
+                    <Bouton_Global text="Découvrir" class="para_child para_button" />
                 </div>
             </div>
         </article>
