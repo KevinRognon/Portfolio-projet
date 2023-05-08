@@ -16,6 +16,7 @@ button{
     width: 100px;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0);
+    color: white;
     border: 2px solid white;
     border-radius: 20px;
     transition: background-color 0.4s, color 0.4s;

@@ -45,6 +45,16 @@ header {
             align-items: center;
             a{
                 text-decoration: none;
+                padding: 5px;
+                border-radius: 20px;
+                &:hover {
+                    background-color: white;
+                    color: #36494E;
+                }
+            }
+            .router-link-active{
+                background-color: white;
+                color: #36494E;
             }
         }
     }
