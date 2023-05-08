@@ -1,5 +1,5 @@
 <template>
-    <section class="section_projets">
+    <section id="cdc" class="section_projets">
         <article class="flex article-color-main">
             <div id="project_cdc">
                 <img class="img_para_cdc" src="../assets/images/Image_cahier_des_charges.jpg" alt="Image du projet de cahier des charges">
@@ -15,7 +15,7 @@
                     <p class="para_cdc_child">
                         Logiciel utilisé: WordPad
                     </p>
-                    <Bouton_Global class="para_cdc_child para_cdc_button" />
+                    <Bouton_Global text="Découvrir" class="para_cdc_child para_cdc_button" />
                 </div>
             </div>
         </article>

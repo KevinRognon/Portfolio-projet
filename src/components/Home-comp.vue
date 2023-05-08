@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="home">
         <article class="flex_home article-color-main">
             <img src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
             <div id="div_p">
