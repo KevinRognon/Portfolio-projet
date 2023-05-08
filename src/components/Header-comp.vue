@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="home">
         <nav>
             <ul>
                 <h1>K.ROGNON</h1>

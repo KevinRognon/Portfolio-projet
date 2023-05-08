@@ -20,9 +20,6 @@
                 </div>
             </div>
         </article>
-        <article>
-
-        </article>
     </section>
 </template>
 <script setup>
