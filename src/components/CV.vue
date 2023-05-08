@@ -31,15 +31,18 @@ import Bouton_Global from './Bouton_Global.vue'
 import gsap from 'gsap';
 
 onMounted(() => {
-    let img = gsap.to('.img_para', {
+    let img = gsap.to(
+        '.img_para', {
                 opacity: 1,
                 x: 0
             });
-    let hr = gsap.to('hr', {
+    let hr = gsap.to(
+        'hr', {
                 opacity: 0.4,
                 y: 0
             });
-    let para = gsap.to('.para_child', {
+    let para = gsap.to(
+        '.para_child', {
                 opacity: 1,
                 x: 0,
                 stagger: 0.2

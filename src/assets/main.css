@@ -25,13 +25,8 @@ main {
 }
 
 section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: 100%;
     width: 100%;
-
 }
 .section-projets{
     display: flex;
@@ -65,7 +60,6 @@ section{
     height: 100vh;
     width: 100vw;
     padding: 100px;
-    /* margin-top: -50px; */
 }
 p{
     font-family: 'Quicksand';
