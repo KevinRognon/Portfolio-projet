@@ -1,8 +1,8 @@
 <template>
-    <BoutonRetourHaut />
-    <CV />
-    <CDC />
-    <CommentairesComp />
+        <BoutonRetourHaut />
+        <CV />
+        <CDC />
+        <CommentairesComp />
 </template>
 <script setup>
 import CV from './CV.vue';
@@ -13,5 +13,4 @@ import BoutonRetourHaut from './BoutonRetourHaut.vue';
 
 </script>
 <style scoped>
-
 </style>

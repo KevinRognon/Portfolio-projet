@@ -61,7 +61,6 @@ onMounted(() => {
 </script>
 <style lang="scss" scoped>
 section{
-    background-color: #5C3D3B;
     article{
         #project_cdc{
             display: flex;
