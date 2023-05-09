@@ -1,11 +1,14 @@
 <template>
     <div>
-        <a href="#home">
+        <div @click="returnTop">
             <img src="../assets/images/fleche_haut.png" alt="Flèche de retour en haut de page">
-        </a>
+        </div>
     </div>
 </template>
 <script setup>
+    function returnTop(){
+        window.scrollTo(0,0);
+    }
 </script>
 <style lang="scss" scoped>
     div{

@@ -1,4 +1,5 @@
 <template>
+    <BoutonRetourHaut />
     <CV />
     <CDC />
     <CommentairesComp />
@@ -7,6 +8,7 @@
 import CV from './CV.vue';
 import CDC from './CDC.vue';
 import CommentairesComp from './Commentaires-comp.vue';
+import BoutonRetourHaut from './BoutonRetourHaut.vue';
 
 
 </script>
