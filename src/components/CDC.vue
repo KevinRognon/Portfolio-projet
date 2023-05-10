@@ -15,7 +15,8 @@
                     <p class="para_cdc_child">
                         Logiciel utilisé: WordPad
                     </p>
-                    <Bouton_Global text="Découvrir" class="para_cdc_child para_cdc_button" />
+                    <Bouton_Global @click="show = !show" text="Découvrir" class="para_cdc_child para_cdc_button" />
+                    <Modal_CV titre="Cahier des charges" technos="WordPad" lien="http://kevinrognon.github.io/CV_CEF_TEST" :show="show"/>
                 </div>
             </div>
         </article>
@@ -23,8 +24,12 @@
 </template>
 <script setup>
 import Bouton_Global from './Bouton_Global.vue';
+import Modal_CV from './Modals/Modal_CV.vue';
 import { onMounted } from 'vue';
 import gsap from 'gsap';
+defineProps({
+        show: Boolean,
+})
 onMounted(() => {
     let img = gsap.to(
         '.img_para_cdc', {
