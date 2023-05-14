@@ -6,11 +6,11 @@
             </p>
             <form action="https://formsubmit.co/fed027a94ca7a724f960f51a366e41a9" method="POST">
                 <div>
-                    <input name="firstname" placeholder="Prénom" type="text" required>
-                    <input name="lastname" placeholder="Nom" type="text" required>
-                    <input name="subject" placeholder="Objet" type="text" required>
+                    <input name="Prénom" placeholder="Prénom" type="text" required>
+                    <input name="Nom" placeholder="Nom" type="text" required>
+                    <input name="Email" placeholder="Email" type="email" required>
                 </div>
-                <textarea name="message" placeholder="Votre message.." cols="50" rows="10" required></textarea>
+                <textarea name="Message" placeholder="Votre message.." cols="50" rows="10" required></textarea>
                 <Bouton_Global class="bouton_envoyer" type="submit" text="Envoyer" />
             </form>
         </article>
