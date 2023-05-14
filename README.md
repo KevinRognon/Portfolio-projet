@@ -1,35 +1,15 @@
-# portfolio-projet
+# Installation
 
-This template should help get you started developing with Vue 3 in Vite.
+Se rendre à la racine du projet (au même niveau que le fichier index.html
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+###### Pour installer toutes les dépendances nécessaire au bon fonctionnement sur un ordinateur local
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+###### Compilation et hot reload pendant le développement
 
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
