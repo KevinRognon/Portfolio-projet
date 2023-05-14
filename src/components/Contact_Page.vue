@@ -4,7 +4,7 @@
             <p>
                 Ecrivez-moi ici: 
             </p>
-            <form @submit.prevent action="https://formsubmit.co/el/lohuyu" method="POST">
+            <form action="https://formsubmit.co/fed027a94ca7a724f960f51a366e41a9" method="POST">
                 <div>
                     <input name="firstname" placeholder="Prénom" type="text" required>
                     <input name="lastname" placeholder="Nom" type="text" required>
