@@ -91,7 +91,6 @@ defineProps({
 		button{
 			color: rgb(0, 0, 0);
 			border-color: rgb(0, 0, 0);
-			// background-color: #000000;
 			&:hover {
 				color: rgb(255, 255, 255);
 				border-color: rgb(255, 255, 255);

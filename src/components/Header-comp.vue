@@ -1,13 +1,4 @@
 <template>
-    <!-- <header>
-        <nav>
-            <ul>
-                <router-link to="/"><h1>K.ROGNON</h1></router-link>
-                <router-link to="/projects">Projects</router-link>
-                <router-link to="/contact">Contact</router-link>
-            </ul>
-        </nav>
-    </header> -->
     <header>
         <nav>
             <ul>
