@@ -4,13 +4,13 @@
             <p>
                 Ecrivez-moi ici: 
             </p>
-            <form action="mailto:rognonk@gmail.com" method="post">
+            <form @submit.prevent action="https://formsubmit.co/el/lohuyu" method="POST">
                 <div>
-                    <input id="firstname" placeholder="Prénom" type="text">
-                    <input id="lastname" placeholder="Nom" type="text">
-                    <input id="object" placeholder="Objet" type="text">
+                    <input name="firstname" placeholder="Prénom" type="text" required>
+                    <input name="lastname" placeholder="Nom" type="text" required>
+                    <input name="subject" placeholder="Objet" type="text" required>
                 </div>
-                <textarea id="message" placeholder="Votre message.." cols="50" rows="10"></textarea>
+                <textarea name="message" placeholder="Votre message.." cols="50" rows="10" required></textarea>
                 <Bouton_Global class="bouton_envoyer" type="submit" text="Envoyer" />
             </form>
         </article>
