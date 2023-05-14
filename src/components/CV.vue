@@ -15,19 +15,29 @@
                     <p class="para_child">
                         Logiciel utilisé: Visual Studio Code
                     </p>
-                    <!-- Inclure un router link sur ce bouton! -->
-                    <Bouton_Global text="Découvrir" class="para_child para_button" />
+                    <Bouton_Global @click="show = !show" text="Découvrir" class="para_child para_button" />
+                    <Modal_CV titre="Curriculum Vitae" technos="HTML5 & CSS3" lien="http://kevinrognon.github.io/CV_CEF_TEST" creation="17-04-2023" :show="show"/>
                 </div>
             </div>
         </article>
     </section>
 </template>
+
+
 <script setup>
+
+
 import { onMounted } from 'vue';
 import Bouton_Global from './Bouton_Global.vue';
+import Modal_CV from './Modals/Modal_CV.vue';
 import gsap from 'gsap';
 
+defineProps({
+    show: Boolean,
+})
+
 onMounted(() => {
+
     let img = gsap.to(
         '.img_para', {
                 opacity: 1,
@@ -59,7 +69,6 @@ onMounted(() => {
     })
     intersect.observe(section);
 });
-
 
 
 </script>
@@ -95,7 +104,7 @@ article{
 
     }
     .para_child{
-        
+
         opacity: 0;
         transform: translateX(200px);
     }

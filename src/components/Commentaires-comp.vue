@@ -15,7 +15,9 @@
                     <p class="para_com_child">
                         Logiciel utilisé: Visual studio code
                     </p>
-                    <Bouton_Global text="Découvrir" class="para_com_child para_com_button" />
+                    <Bouton_Global @click="show = !show" text="Découvrir" class="para_com_child para_com_button" />
+
+                    <Modal_CV titre="Espace Commentaire" technos="HTML5, CSS3, Javascript + VueJs" lien="https://github.com/KevinRognon/espace_commentaire" creation="28-04-2023" :show="show"/>
                 </div>
             </div>
         </article>
@@ -23,8 +25,14 @@
 </template>
 <script setup>
 import Bouton_Global from './Bouton_Global.vue';
+import Modal_CV from './Modals/Modal_CV.vue';
 import { onMounted } from 'vue';
 import gsap from 'gsap'
+
+defineProps({
+    show: Boolean,
+})
+
 
 onMounted(() => {
     let img = gsap.to(

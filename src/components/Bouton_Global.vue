@@ -7,6 +7,7 @@
     defineProps({
         text: String
     })
+
 </script>
 
 
@@ -23,6 +24,7 @@ button{
     &:hover{
         background-color: white;
         color: #5C3D3B;
+        cursor: pointer;
     }
 }
 </style>
