@@ -16,7 +16,7 @@
                         Logiciel utilisé: Visual Studio Code
                     </p>
                     <Bouton_Global @click="show = !show" text="Découvrir" class="para_child para_button" />
-                    <Modal_CV titre="Curriculum Vitae" technos="HTML5 & CSS3" lien="http://kevinrognon.github.io/CV_CEF_TEST" :show="show"/>
+                    <Modal_CV titre="Curriculum Vitae" technos="HTML5 & CSS3" lien="http://kevinrognon.github.io/CV_CEF_TEST" creation="17-04-2023" :show="show"/>
                 </div>
             </div>
         </article>
@@ -32,11 +32,10 @@ import Bouton_Global from './Bouton_Global.vue';
 import Modal_CV from './Modals/Modal_CV.vue';
 import gsap from 'gsap';
 
-
-
 defineProps({
     show: Boolean,
 })
+
 onMounted(() => {
 
     let img = gsap.to(

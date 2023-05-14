@@ -17,7 +17,7 @@
                     </p>
                     <Bouton_Global @click="show = !show" text="Découvrir" class="para_com_child para_com_button" />
 
-                    <Modal_CV titre="Espace Commentaire" technos="HTML5, CSS3, Javascript + VueJs" lien="http://kevinrognon.github.io/CV_CEF_TEST" :show="show"/>
+                    <Modal_CV titre="Espace Commentaire" technos="HTML5, CSS3, Javascript + VueJs" lien="https://github.com/KevinRognon/espace_commentaire" creation="28-04-2023" :show="show"/>
                 </div>
             </div>
         </article>

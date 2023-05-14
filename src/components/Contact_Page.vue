@@ -4,20 +4,21 @@
             <p>
                 Ecrivez-moi ici: 
             </p>
-            <form @submit.prevent>
+            <form action="mailto:rognonk@gmail.com" method="post">
                 <div>
-                    <input placeholder="Prénom" type="text">
-                    <input placeholder="Nom" type="text">
-                    <input placeholder="Objet" type="text">
+                    <input id="firstname" placeholder="Prénom" type="text">
+                    <input id="lastname" placeholder="Nom" type="text">
+                    <input id="object" placeholder="Objet" type="text">
                 </div>
-                <textarea placeholder="Votre message.." cols="50" rows="10"></textarea>
-                <Bouton_Global class="bouton_envoyer" text="Envoyer" />
+                <textarea id="message" placeholder="Votre message.." cols="50" rows="10"></textarea>
+                <Bouton_Global class="bouton_envoyer" type="submit" text="Envoyer" />
             </form>
         </article>
     </section>
 </template>
 <script setup>
 import Bouton_Global from './Bouton_Global.vue';
+
 
 
 </script>

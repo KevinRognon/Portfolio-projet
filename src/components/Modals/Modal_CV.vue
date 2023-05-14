@@ -6,13 +6,15 @@
 			<button class="button-close" @click="show = !show">X</button>
 			<h3>Titre du projet: {{ titre }}</h3>
 			<p>Technologies utlisées: {{ technos }}</p>
+			<p>Date de création: {{ creation }}</p>
 			<a target="_blank" :href="lien"><Bouton_GlobalVue text="Voir"/></a>
 		</div>
 	</div>
 </template>
 
 <script setup>
-import Bouton_GlobalVue from '../Bouton_Global.vue'
+import Bouton_GlobalVue from '../Bouton_Global.vue';
+
 
 
 
@@ -20,8 +22,10 @@ defineProps({
 	titre: String,
 	technos: String,
 	lien: String,
+	creation: String,
 	show: Boolean,
 })
+
 
 </script>
 

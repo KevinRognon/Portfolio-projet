@@ -16,7 +16,7 @@
                         Logiciel utilisé: WordPad
                     </p>
                     <Bouton_Global @click="show = !show" text="Découvrir" class="para_cdc_child para_cdc_button" />
-                    <Modal_CV titre="Cahier des charges" technos="WordPad" lien="http://kevinrognon.github.io/CV_CEF_TEST" :show="show"/>
+                    <Modal_CV titre="Cahier des charges" technos="WordPad" lien="/src/assets/images/cahier_charge.pdf" creation="23-04-2023" :show="show"/>
                 </div>
             </div>
         </article>
