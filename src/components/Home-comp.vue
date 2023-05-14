@@ -4,7 +4,7 @@
             <img class="image_home" src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
             <div id="div_p">
                 <p  class="article_p">
-                    Bonjour et bienvenue sur mon portfolio ! Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur Web & Web Mobile au Centre Européen de Formation.
+                    Bonjour et bienvenue sur mon portfolio ! <br> Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur Web & Web Mobile au Centre Européen de Formation.
                 </p>
 
                 <p  class="article_p">

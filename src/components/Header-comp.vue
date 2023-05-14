@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <router-link to="/"><img src="../assets/images/home.png" alt="Logo bouton acceuil"></router-link>
-                <router-link to="/projects"><img src="../assets/images/projets.png" alt=""></router-link>
-                <router-link to="/contact"><img src="../assets/images/mail.png" alt=""></router-link>
+                <router-link to="/"><img src="../assets/images/home.png" alt="Logo bouton acceuil"><p>Home</p></router-link>
+                <router-link to="/projects"><img src="../assets/images/projets.png" alt=""><p>Projects</p></router-link>
+                <router-link to="/contact"><img src="../assets/images/mail.png" alt=""><p>Contact</p></router-link>
             </ul>
         </nav>
     </header>
@@ -35,7 +35,7 @@ header {
 
 
     background-color: #36494E;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 
     display: flex;
     justify-content: center;
@@ -62,13 +62,21 @@ header {
                 text-decoration: none;
                 padding: 10px;
                 border-radius: 20px;
+                img{
+                    width: 18px;
+                    height: 18px;
+                }
+                &:hover {
+                    border-left: 0.7px solid white;
+                    border-right: 0.7px solid white;
+                    border-radius: 0;
+                }
 
-                font-size: 1.4rem;
             }
             .router-link-active{
-                border: 1px solid white;
-                border-radius: 50%;
-                padding: 10px;
+                border-left: 0.7px solid white;
+                border-right: 0.7px solid white;
+                border-radius: 0;
             }
         }
     }
