@@ -1,16 +1,16 @@
 <template>
     <section id="home">
         <article class="flex_home article-color-main">
-            <img src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
+            <img class="image_home" src="../assets/images/photo_kevin.jpg" alt="Image de Kevin">
             <div id="div_p">
                 <p  class="article_p">
-                    Bonjour et bienvenue sur mon portfolio ! Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur Web & Web Mobile au Centre Européen de Formation. 
+                    Bonjour et bienvenue sur mon portfolio ! Je m'appelle Kevin, j'ai 25 ans et je suis actuellement en formation de développeur Web & Web Mobile au Centre Européen de Formation.
                 </p>
-                    
+
                 <p  class="article_p">
-                    Passionné par le monde de la programmation, je suis constamment en quête de nouveaux défis et projets à réaliser. J'ai une grande aisance avec les technologies du web, notamment avec les langages de programmation tels que HTML, CSS, JavaScript et Vue.js. 
+                    Passionné par le monde de la programmation, je suis constamment en quête de nouveaux défis et projets à réaliser. J'ai une grande aisance avec les technologies du web, notamment avec les langages de programmation tels que HTML, CSS, JavaScript et Vue.js.
                 </p>
-                
+
                 <p  class="article_p">
                     J'ai également acquis des compétences en design, ce qui me permet de concevoir des interfaces intuitives et esthétiques. J'ai hâte de pouvoir mettre mes compétences en pratique et de relever de nouveaux défis dans le domaine du développement web. N'hésitez pas à naviguer sur l'onglet <strong>"Projects"</strong> pour découvrir mes réalisations et projets en cours !
                 </p>
@@ -23,7 +23,7 @@ import { onMounted } from 'vue';
 import gsap from 'gsap'
 
 onMounted(() => {
-    let article_img = document.querySelector('img');
+    let article_img = document.querySelector('.image_home');
 
     gsap.fromTo(article_img, {
         opacity: 0,
@@ -47,6 +47,7 @@ onMounted(() => {
     })
 })
 </script>
+
 <style lang="scss" scoped>
 #div_p{
     display: flex;
