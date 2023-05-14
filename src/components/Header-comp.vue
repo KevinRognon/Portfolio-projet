@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <router-link to="/"><img src="../assets/images/home.png" alt="Logo bouton acceuil"><p>Home</p></router-link>
-                <router-link to="/projects"><img src="../assets/images/projets.png" alt=""><p>Projects</p></router-link>
-                <router-link to="/contact"><img src="../assets/images/mail.png" alt=""><p>Contact</p></router-link>
+                <router-link to="/"><img src="../assets/images/home.png" alt="Logo bouton acceuil"></router-link>
+                <router-link to="/projects"><img src="../assets/images/projets.png" alt=""></router-link>
+                <router-link to="/contact"><img src="../assets/images/mail.png" alt=""></router-link>
             </ul>
         </nav>
     </header>
@@ -31,11 +31,11 @@ header {
 
 
     width: 100%;
-    height: 110px;
+    height: 80px;
 
 
     background-color: #36494E;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid white;
 
     display: flex;
     justify-content: center;
@@ -58,29 +58,17 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                gap: 2px;
                 text-decoration: none;
-                padding: 5px;
+                padding: 10px;
                 border-radius: 20px;
 
                 font-size: 1.4rem;
-                &:hover {
-                    &::after {
-                        content: "";
-                        display: block;
-                        width: 100%;
-                        height: 1px;
-                        background-color: white;
-                    }
-                }
             }
             .router-link-active{
-                &::after{
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 1px;
-                    background-color: white;
-                }
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 10px;
             }
         }
     }
