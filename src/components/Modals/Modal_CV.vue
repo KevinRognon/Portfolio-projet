@@ -67,15 +67,15 @@ defineProps({
 		.button-close {
 			position: absolute;
 			text-align: center;
-			top: 0;
-			right: 0;
-			width: 50px;
-			height: 40px;
+			top: -20px;
+			right: -20px;
+			width: 35px;
+			height: 35px;
 			background-color: rgba(190, 0, 0, 1);
 			color: rgb(0, 0, 0);
 			font-size: 1.2rem;
 			border: none;
-			border-radius: 0 20px 0 20px;
+			border-radius: 50%;
 			cursor: pointer;
 			&:hover {
 				background-color: rgba(255, 0, 0, 1);
@@ -89,9 +89,14 @@ defineProps({
 			color: black;
 		}
 		button{
-			color: white;
-			border-color: rgb(255, 255, 255);
-			background-color: #000000;
+			color: rgb(0, 0, 0);
+			border-color: rgb(0, 0, 0);
+			// background-color: #000000;
+			&:hover {
+				color: rgb(255, 255, 255);
+				border-color: rgb(255, 255, 255);
+				background-color: #000000;
+			}
 		}
 	}
 }
