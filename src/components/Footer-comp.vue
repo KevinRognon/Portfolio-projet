@@ -4,7 +4,10 @@
             <a href="https://www.facebook.com/kevin.rognon.9" target="_blank"><img src="../assets/images/facebook.png" alt="Logo facebook"></a>
             <a href="https://github.com/KevinRognon" target="_blank"><img src="../assets/images/github.png" alt="Logo Github"></a>
         </div>
-        <small>Copyright 2023 - Rognon Kevin</small>
+        <small>
+            Copyright 2023 - Rognon Kevin <br> <br>
+            Dernière mise à jour: <time datetime="2023-05-14">14 Mai 2023</time>
+        </small>
     </footer>
 </template>
 <script setup>
